@@ -1,0 +1,673 @@
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+  <meta http-equiv="x-ua-compatible" content="IE=8">
+	    <!-- Chartbeat code starts here -->
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <!-- Chartbeat code ends here -->
+	<title>Interviewstreet - Rocket Fuel Hiring Test 1 Short B</title>
+        <base href="https://www.interviewstreet.com/recruit/" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/userstyles.20131115005924.css" />
+        <link rel="stylesheet" href="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/themes/2/theme.css" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <script type="text/javascript">
+            window.cdn_url = "https://d3rpyts3de3lx8.cloudfront.net/recruit/";
+            window.base_url = "https://www.interviewstreet.com/recruit/";
+        </script>
+            </head>
+    <body id="public">
+      <!--[if lt IE 7]>
+      <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+        <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+        <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+          <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+          <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+            <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an outdated browser</div>
+            <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better experience using this site, please upgrade to a modern web browser.</div>
+          </div>
+          <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+          <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+          <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+          <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+        </div>
+      </div>
+      <![endif]-->
+        
+        <div id="container" class="container">
+            <h1>
+                <img src='' alt=''>
+            </h1>
+                <div class="right" style="padding-bottom:10px;">[ jennifer.dai@berkeley.edu ]</div>
+
+      
+            <div id="content" class="container">
+                <div class="info span-24">
+                    <div class="span-17">
+                        <h2>Rocket Fuel Hiring Test 1 Short B</h2>
+                    </div>
+                    <div class="span-7 last m" style="padding:0px;">
+<a href="test/view/524f9ec093b9b/?hash=ea5d2f1c4608232e07d3aa3d998e5135">Back to Question List</a>
+                        <div id="timer"></div>
+                    </div>
+                </div> <!-- #info -->
+            </div> <!-- #content -->
+
+            <div class="container">
+            <form action="https://www.interviewstreet.com/recruit/test/view/524f9ec093b9b/4fab0980f39a4" method="post" accept-charset="utf-8" id="testquestion" class="wufoo" enctype="multipart/form-data">            <input type="hidden" id="tid" name="tid" value="524f9ec093b9b" />
+            <input type="hidden" id="qid" name="qid" value="4fab0980f39a4" />
+            <input type="hidden" id="autosave" name="autosave" value="" />
+				<ul>
+					<li class="section first">
+                        <div class="m"><strong>Question 1 / 1 (RacerRater)</strong></div>
+                        <div class="question"><p>&nbsp;</p>
+
+<p>*Note: Please see the hint under the directions for one way to solve the problem. Only attempt an alternative solution if you are confident you can get it working in time.</p>
+
+<p>Suppose you are a fan of auto-racing and want to figure out which drivers are likely to perform well in an upcoming race. Luckily you have access to a log of the times that each racer started and finished their test race the day before.</p>
+
+<p><strong>The particular rating algorithm you have chosen is to assign each racer R a score that equals the number of other racers who both started after R started and finished before R finished. </strong></p>
+
+<p>Note that a lower score generally suggests that the racer is faster, and this rating algorithm keeps from penalizing fast racers who have slow times simply because they are stuck behind a crash or slow racer. Additionally, this rating algorithm does not reward fast racers who pass tons of slow racers in comparison to fast racers who race when there are not many slow racers on the track to pass (compare this with rating a racer based on the net number of passes).</p>
+
+<p>&nbsp;</p>
+
+<p>More formally, you want to write a program that will read the test race log from standard input. The first line of the log contains a single integer n from 0 to 70,000 that represents the number of racers in the log. The next n lines of the test race log have the following format:</p>
+
+<p>&nbsp;</p>
+
+<p>racerId startTime endTime</p>
+
+<p>&nbsp;</p>
+
+<p>where racerId is an integer in the range [0,10^9] and startTime and endTime are both integers such that&nbsp;0 &lt;= startTime &lt; endTime &lt;= 10^18. Each racerId will be distinct. Also, the collection of all start and end times will not contain any duplicate elements.</p>
+
+<p>&nbsp;</p>
+
+<p>Given such an input, you should print output in the following format:</p>
+
+<p>&nbsp;</p>
+
+<p>racerId score</p>
+
+<p>&nbsp;</p>
+
+<p>where score is the score as defined above for racer racerId. The output lines should be sorted in ascending order of score with ties broken by sorting by racerId, also in ascending order. This can be accomplished with a simple sort at the end.</p>
+
+<p><strong>Directions</strong>:</p>
+
+<p>Please code this problem in Java, C, C++, or Python (all else being equal, we prefer Java).&nbsp;Your solution should run in o(N^2) time&nbsp;on all inputs (i.e., strictly less than O(N^2) -- a&nbsp;Theta(N^2) algorithm such as naive brute force will not be fast enough -- please see&nbsp;http://en.wikipedia.org/wiki/Big_O_notation if you are not familiar with big-o,&nbsp;little-o, and Theta). A&nbsp;very fast Theta(N^2)-time implementation may pass all test cases, but please strive for better asymptotic performance as we review all submissions manually&nbsp;for code quality and asymptotic performance.</p>
+
+<p><em>Hint: One possible way to achieve o(N^2) time&nbsp;(there are several other acceptable methods) is to use a data structure with K buckets&nbsp;</em><em>(e.g., K = 300 or some function of input size), each of which is initially empty and is defined by two times. Each bucket will&nbsp;eventually contain&nbsp;racers whose start times fall&nbsp;between the bucket&#39;s start and end&nbsp;time. The bucket boundaries should be chosen such that they ultimately will contain the same number of racers</em><em>. You can now iterate through the racers in end time order and, as you iterate over each racer, fill in&nbsp;the&nbsp;bucketed data structure such that you can use it to quickly count the number of racers that finished before and started after that racer.</em></p>
+
+<p><strong>What We Are Looking For:</strong></p>
+
+<p>For this problem, we simply want to see that you can implement the algorithm correctly, without particular regard to principles of object orientation or modularity.&nbsp; Do give us at least minimal documentation to help us understand what you are trying to accomplish in certain key places of the algorithm.</p>
+
+<p>Example:</p>
+
+<p>&nbsp;</p>
+
+<p>input:</p>
+
+<p>5</p>
+
+<p>2 100 200</p>
+
+<p>3 110 190</p>
+
+<p>4 105 145</p>
+
+<p>1 90 150</p>
+
+<p>5 102 198</p>
+
+<p>output:</p>
+
+<p>3 0</p>
+
+<p>4 0</p>
+
+<p>1 1</p>
+
+<p>5 2</p>
+
+<p>2 3</p>
+
+<p>&nbsp;</p>
+
+<p>Note in the above example that racer 3 has a score of 0 because no one starts after racer 3 (a drawback to this scoring system is the last racer always has a score of 0). Racer 4 also has a score of 0 because the only racer who starts after racer 4&#39;s start time (racer 3) has a later finish time. Racer 3 is listed ahead of racer 4 despite having a slower time because racer 3&#39;s id is lower. At the other end, racer 2 has a score of 3 because racers 3, 4, and 5 start after racer 2 and finish before racer 2 finishes.</p>
+
+<p>&nbsp;</p></div>
+					</li>
+
+
+<div id="download-test-cases" style="margin-bottom:20px;">
+<img src="https://d3rpyts3de3lx8.cloudfront.net/recruit/images/download.png">&nbsp;&nbsp;<a target='_blank' href='test/downloadsamplecase/4fab0980f39a4/'>Download sample testcases as zip</a> <small> ['Compile &amp; Test' will run your code against these testcases. Avoid using Notepad for viewing these testcases] </small> </div>
+<input type="hidden" id="frames_json" name="frames_json" />
+
+<style type="text/css">
+/* IE7 fix for tiny fonts - caused by clash with Wufoo. Sigh */
+    div {
+        font-size: 1em !important;
+    }
+</style>
+<div id="codeshell">
+</div>
+<script type="text/javascript">
+var codeStorage = {"c":{"code":"#include <stdio.h>\nint main() {\n    \/* Enter your code here. Read input from STDIN. Print output to STDOUT *\/\n    return 0;\n}","startLine":1},"cpp":{"code":"#include <iostream>\nusing namespace std;\nint main() {\n    \/* Enter your code here. Read input from STDIN. Print output to STDOUT *\/\n    return 0;\n}","startLine":1},"java":{"code":"\/* Enter your code here. Read input from STDIN. Print output to STDOUT *\/\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.io.IOException;\n\npublic class Solution {\n    public static void main(String[] args) throws IOException {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        String line = br.readLine();\n        int n = Integer.parseInt(line);\n        while ((line = br.readLine()) != null) {\n            \/\/ ...\n        }\n        \/\/ ...\n    }\n}\n","startLine":1},"python":{"code":"# Enter your code here. Read input from STDIN. Print output to STDOUT","startLine":1},"csharp":{"code":"using System;\nnamespace Solution {\n    class Solution {\n        static void Main(string[] args) {\n            \/* Enter your code here. Read input from STDIN. Print output to STDOUT *\/\n        }\n    }\n}","startLine":1},"scala":{"code":"\/* Enter your code here. Read input from STDIN. Print output to STDOUT *\/","startLine":1},"clojure":{"code":"; Enter your code here. Read input from STDIN. Print output to STDOUT","startLine":1}};
+</script>
+
+<li class="buttons">
+
+<button name="compileandTest" type="button" id="compileandTest" class="submit long" >Compile & Test</button><input type="submit" name="" value="Submit Answer" id="saveForm" class="submit long"  />
+</li> <!-- .buttons -->
+
+				</ul>
+            </form>            </div>
+			<div id="compileandTestOuput" style = "padding-left:20px;"></div>
+<div class="container">
+    <div id="footer" class="m span-24">
+    <div style="padding: 10px 0px"> <center><small> <i> &nbsp; &nbsp; Powered by </i> </small></center></div> <a href="http://www.interviewstreet.com" target="_blank"><img src="https://d3rpyts3de3lx8.cloudfront.net/recruit/images/logo.png" alt="Interviewstreet" title="Interviewstreet" border="0" width="80" height="28"/></a></div>
+</div>
+        </div>  <!-- #container -->
+        <!-- Chartbeat code starts here -->
+        <script type="text/javascript">
+            var _sf_async_config={uid:34206,domain:"recruit.interviewstreet.com"};
+            (function(){
+              function loadChartbeat() {
+                window._sf_endpt=(new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src',
+                   (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                   "js/chartbeat.js");
+                document.body.appendChild(e);
+              }
+              var oldonload = window.onload;
+              window.onload = (typeof window.onload != 'function') ?
+                 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+        </script>
+        <!-- Chartbeat code ends here -->
+    </body>
+<script type="text/javascript" src="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/jquery.min.js"></script>
+<script type="text/javascript" src="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/userscripts.20131115005924.js"></script>
+<script type="text/javascript" src="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/codeshellscripts.20131115005924.js"></script>
+<link rel="stylesheet" type="text/css" href="https://d3rpyts3de3lx8.cloudfront.net/recruit/includes/codeshellstyles.20131115005924.css" />
+<!-- <script type="text/javascript" src="https://use.typekit.com/afp2pqr.js"></script> -->
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<textarea id="lastAttemptCode" style="display:none">
+</textarea>
+
+
+<script type="text/javascript">
+
+function gotoFullScreen() {
+var el = document.documentElement, rfs =
+           el.requestFullScreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullScreen
+;
+if(typeof rfs!="undefined" && rfs) {
+  rfs.call(el);
+} else if(typeof window.ActiveXObject!="undefined") {
+  // for Internet Explorer
+  var wscript = new ActiveXObject("WScript.Shell");
+  if (wscript!=null) {
+     wscript.SendKeys("{F11}");
+  }
+}
+}
+
+$(document).ready(function() {
+     var startIdleTime = null;
+     var lastIdleTime = null;
+     var lastIdleDate = null;
+     var timeDiff = null;
+     var totalIdleTime = null;
+     var idleTimeout = 15 * 1000;
+     $.idleTimer(idleTimeout);
+     $(document).bind('idle.idleTimer', function() {
+         lastIdleDate = new Date();
+         lastIdleTime = Date.UTC(lastIdleDate.getFullYear(), lastIdleDate.getMonth(), lastIdleDate.getDate(), lastIdleDate.getHours(), lastIdleDate.getMinutes(), lastIdleDate.getSeconds(), lastIdleDate.getMilliseconds()) - idleTimeout;
+         //lastIdleTime = (new Date()).getTime() - idleTimeout;
+         startIdleTime = lastIdleTime;
+     });
+
+     $(document).bind('active.idleTimer', function() {
+         var curDate = new Date();
+         var curTime = Date.UTC(curDate.getFullYear(), curDate.getMonth(), curDate.getDate(), curDate.getHours(), curDate.getMinutes(), curDate.getSeconds(), curDate.getMilliseconds());
+         timeDiff = curTime - lastIdleTime;
+         pingServer();
+         lastIdleTime = null;
+         startIdleTime = null;
+     });
+
+     function pingServer(){
+                  if(lastIdleTime) {
+             var curDate = new Date();
+             var curTime = Date.UTC(curDate.getFullYear(), curDate.getMonth(), curDate.getDate(), curDate.getHours(), curDate.getMinutes(), curDate.getSeconds(), curDate.getMilliseconds());
+             timeDiff = curTime - lastIdleTime;
+             lastIdleTime = curTime;
+         }
+
+         totalIdleTime = curTime - startIdleTime;
+              var data = {
+                aid: "653060"
+         };
+         if(timeDiff) {
+             data.idle = timeDiff;
+         }
+         if(totalIdleTime) {
+             data.total_idle = totalIdleTime;
+         }
+                  var answer = $("#codeshell").codeShell('getValue');
+         var lang = $("#codeshell").codeShell('getCurrentLanguage');
+         data.qid = 6752;
+         data.answer = answer;
+         data.lang = lang;
+                  $.ajax({
+             data: data,
+             url: window.base_url + "test/ping/524f9ec093b9b/",
+             type: 'POST',
+             timeout: 2000
+         });
+              timeDiff = null;
+     }
+
+    
+    
+     
+    
+        var currentTestAndCompileData;
+
+        var question_id = $("#qid").val();
+
+        var current_user_hash = readCookie('userhash');
+        var local_storage_key = current_user_hash + '-' + question_id ;
+        $('#customTestCase').click(function(){
+            $('#customTestInput')[0].style.display = this.checked?'block':'none';
+        });
+
+
+        // If the local storage has some data for this particular question, then show that.
+        // Else, show server data. Server data can never be null, even for the first time.
+
+        var local_submission_data = $.jStorage.get(local_storage_key);
+        var server_submission_data = {
+            language : "",
+            answer : $("#lastAttemptCode").val()
+        };
+
+        var display_language = null;
+        if(local_submission_data !== null && local_submission_data.language !== null && local_submission_data.language != '' ){
+            codeStorage[local_submission_data.language]['code']  = local_submission_data.answer;
+            display_language = local_submission_data.language;
+        }
+        else if(server_submission_data !== null && server_submission_data.language !== null && server_submission_data.language != ''){
+            codeStorage[server_submission_data.language]['code'] = server_submission_data.answer;
+            display_language = server_submission_data.language;
+        }
+
+        // Now initialize the code editor
+        $("#codeshell").codeShell({
+            currentLanguage: display_language,
+            codeStorage: codeStorage,
+            onCompile: function(editor) {
+                $("#compileandTest").click();
+            },
+            keyboardImage: "https://d3rpyts3de3lx8.cloudfront.net/recruit/images/keyboard.png"
+        });
+
+        // Save the user's code every 60 seconds
+        $.doTimeout( 60000, function(){
+            var current_question_data = {
+                answer: $("#codeshell").codeShell('getValue'),
+                language: $("#codeshell").codeShell('getCurrentLanguage')
+            }
+            $.jStorage.set(local_storage_key, current_question_data);
+            return true;
+        });
+        $(".tooltip").qtip({
+            position: {
+                my: "top center",
+                at: "bottom center"
+            },
+            style: {
+                classes: 'ui-tooltip-shadow ui-tooltip-rounded'
+            }
+        });
+
+        $('#saveForm').click(function(){
+            var answer = $("#codeshell").codeShell('getValue');
+            var lang = $("#codeshell").codeShell('getCurrentLanguage');
+
+            // Save it to local storage first
+            var current_question = {
+                answer: answer,
+                language: lang
+            };
+            $.jStorage.set(local_storage_key, current_question)
+            return true;
+        });
+
+        $("#compileandTest").click(function() {
+
+            // Disable compile and test for two seconds
+            $("#compileandTest").attr("disabled", true);
+            $.doTimeout(2000, function(){
+                $("#compileandTest").attr('disabled', false);
+                return false;
+            });
+
+            // Show a loading button
+            // TODO: this is ugly way of doing it. Show it in a nice way
+            $("#compileandTestOuput").html("<img src='https://d3rpyts3de3lx8.cloudfront.net/recruit/images/running.gif' alt='' align='left'> &nbsp;&nbsp;&nbsp;<span id='compileandTestOuputStatus'>Compiling your code</span>. Please wait...");
+
+            // Get the latest code and language from editor
+            var answer = $("#codeshell").codeShell('getValue');
+            var lang = $("#codeshell").codeShell('getCurrentLanguage');
+
+            // Save it to local storage first
+            var current_question = {
+                answer: answer,
+                language: lang
+            };
+            $.jStorage.set(local_storage_key, current_question)
+
+            // Submit to server and show compile and test output
+            $.post("test/compiletest/",
+            {
+                "qid": question_id,
+                "answer": answer,
+                "lang": lang ,
+                "sample": true,
+                "test_hash" : "524f9ec093b9b"
+                            }, function(data) {
+                if (data.status === "error") {
+                    $("#compileandTestOuput").html(data.message);
+                } else {
+                    handleCodeCompile(data);
+                }
+
+            }, "json");
+
+            return false;
+        });
+
+
+        $(".compileandTestAll").live('click', function() {
+            // Disable compile and test for two seconds
+
+            $("#compileandTest").attr("disabled", true);
+            $(".compileandTestAll").attr("disabled", true);
+            $.doTimeout(5000, function(){
+                $("#compileandTest").attr('disabled', false);
+                $(".compileandTestAll").attr('disabled', false);
+                return false;
+            });
+
+
+            // Show a loading button
+            // TODO: this is ugly way of doing it. Show it in a nice way
+            $("#compileandTestOuput").html("<img src='https://d3rpyts3de3lx8.cloudfront.net/recruit/images/running.gif' alt='' align='left'> &nbsp;&nbsp;&nbsp;<span id='compileandTestOuputStatus'>Compiling your code</span>. Please wait...");
+
+            // Get the latest code and language from editor
+            var answer = $("#codeshell").codeShell('getValue');
+            var lang = $("#codeshell").codeShell('getCurrentLanguage');
+
+            // Save it to local storage first
+            var current_question = {
+                answer: answer,
+                language: lang
+            };
+            $.jStorage.set(local_storage_key, current_question)
+
+
+
+            // Submit to server and show compile and test output
+            $.post("test/compiletest/",
+            {
+                "qid": question_id,
+                "answer": answer,
+                "lang": lang ,
+                "sample": false,
+                "test_hash" : "524f9ec093b9b"
+                            }, function(data) {
+
+                if (data.status === "error") {
+                    $("#compileandTestOuput").html(data.message);
+                } else {
+                    handleCodeCompile(data);
+                }
+
+            }, "json");
+
+            return false;
+        });
+
+
+        function processEvent(data, eventData) {
+            if (eventData.event === "ended") {
+                $("#compileandTestOuput").html(eventData.html);
+            } else {
+                if (eventData.event === "cc_compiled")
+                    $("#compileandTestOuputStatus").text('Compiled your code. Now running against test cases.');
+                if (eventData.event === "cc_all_test_cases_done")
+                    $("#compileandTestOuputStatus").text('Ran against all test cases. Now verifying them.');
+
+                if (eventData.html)
+                    $("#compileandTestOuput").html($("#compileandTestOuput").html() + eventData.html);
+
+            }
+            $(".tooltip").qtip({
+                position: {
+                    my: "top center",
+                    at: "bottom center"
+                },
+                style: {
+                    classes: 'ui-tooltip-shadow ui-tooltip-rounded'
+                }
+            });
+        }
+
+        var timeoutId,
+            lastStatusId,
+            noChangeAttempts = 0;
+
+        function clearTimer() {
+            if (timeoutId) {
+                window.clearTimeout(timeoutId);
+                timeoutId = 0;
+                lastStatusId = 0;
+                noChangeAttempts = 0;
+            }
+        }
+        function setTimer(fn) {
+            timeoutId = window.setTimeout(fn, 2000);
+        }
+
+        function getLatest () {
+            var url = 'compileandtest/status/' + currentTestAndCompileData.catid;
+
+            if (lastStatusId) {
+                url += '/' + lastStatusId;
+            }
+            $.getJSON(url , function (response) {
+                //$("#compileandTestOuput").html(response);
+                var last;
+                if (response.length) {
+                    $.each(response, function (ix, ev) {
+                        processEvent(currentTestAndCompileData, ev);
+                    });
+                    last = response[response.length - 1];
+                    if (last.event === "ended") {
+                        return clearTimer();
+                    }
+                    lastStatusId = last.id;
+                    noChangeAttempts = 0
+                } else {
+                    noChangeAttempts++;
+                }
+                //has waited for more than three minutes and there is no status change
+                if (noChangeAttempts > 105) {
+                    //set appropriate message
+                    $("#compileandTestOuput").text('Your request has timed out. Can you please try again.');
+                    return clearTimer();
+                }
+                setTimer(getLatest);
+            });
+        }
+
+        function handleCodeCompile(data) {
+
+            clearTimer();
+
+            currentTestAndCompileData = data;
+
+            setTimer(getLatest);
+
+            /*$("#compileandTestOuput").html(data);
+                $('html, body').animate({ scrollTop: $('#compileandTestOuput').offset().top }, 'fast');
+                $('.view-diff-link').click(function(){
+                    $(this).parent().next().slideToggle();
+                    return false;
+                });*/
+
+        }
+
+        // Handle recording.
+            
+
+                        $(document).ready(function() {
+                function showTimerWarning(ticks) {
+                    var timeRemaining = $.countdown.periodsToSeconds(ticks);
+                    if (timeRemaining == 120) { $.notifyBar({  cls: "error", html: "This test will end in 2 minutes. Please click on 'Submit answer' for your answer to be evaluated.", delay: 5000, animationSpeed: "normal" }); }
+                    if (timeRemaining == 300) { $.notifyBar({  cls: "error", html: "This test will end in 5 minutes. Please click on 'Submit answer' for your answer to be evaluated.", delay: 5000, animationSpeed: "normal" }); }
+                    if (timeRemaining < 300) { $("#timer").css('background', '#8e2800'); }
+                    if (timeRemaining < 5) { testDone = true; }
+
+                                        if (timeRemaining % 60 == 0) {
+                       pingServer();
+                    }
+                                    }
+
+                function showSectionTimerWarning(ticks) {
+                    var timeRemaining = $.countdown.periodsToSeconds(ticks);
+                    if (timeRemaining == 120) { $.notifyBar({  cls: "error", html: "This section will end in 2 minutes. Please click on 'Submit answer' for your answer to be evaluated.", delay: 5000, animationSpeed: "normal" }); }
+                    if (timeRemaining == 300) { $.notifyBar({  cls: "error", html: "This section will end in 5 minutes. Please click on 'Submit answer' for your answer to be evaluated.", delay: 5000, animationSpeed: "normal" }); }
+                    if (timeRemaining < 300) { $("#timer").css('background', '#8e2800'); }
+                    if (timeRemaining < 5) { testSectionDone = true; }
+
+                                        if (timeRemaining % 60 == 0) {
+                       pingServer();
+                    }
+                                    }
+
+                var d = new Date();
+                d.setTime(d.getTime() + 10656000);
+                                $('#timer').countdown({until: d, layout: 'Time Remaining: {d<}{dn}{dl} {d>} {hnn}:{mnn}:{snn}', expiryUrl: 'test/view/524f9ec093b9b/done/', onTick: showTimerWarning, compact: true});
+                            });
+            });
+
+    if(self!=parent) {
+        window.onload = init;
+        $(this).bind( "ajaxComplete", init);
+    }
+
+    function init() {
+        $.postMessage({ if_height: $('body').outerHeight( true )}, '' );
+    }
+
+</script>
+
+<!-- Enable Copy/Paste Contextmenu protection -->
+
+<script type="text/javascript">
+/*    mpq.name_tag('jennifer.dai@berkeley.edu');
+    mpq.track('Page Load Time', {'CI Benchmark Time' : 0.2127, 'Test ID' : '524f9ec093b9b',  'Question ID' : '4fab0980f39a4'});
+    window.onerror = function(message, url, linenumber) {
+        mpq.track("Javascript error", { 'message': message, 'url': url, 'linenumber': linenumber});
+    }*/
+</script>
+
+</html>
+<script>
+    var submitClicked = false;
+    var textareaChanged = false;
+    var globalFirstLoad = true;
+    var testDone = false;
+
+    $(document).ready(function() {
+
+        $("#move-nextQuestion").click(function() { window.location = "https://www.interviewstreet.com/recruit/test/view/524f9ec093b9b//?randhash=522166"; });
+        $("#move-prevQuestion").click(function() { window.location = "https://www.interviewstreet.com/recruit/test/view/524f9ec093b9b//?randhash=641725"; });
+
+        prettyPrint();
+
+        $("#saveForm").click(function() {
+            submitClicked = true;
+                        // Save the language the user used to code as a cookie, so that it can be reused
+            var current_language = $(".currentlanguageblock a").attr('id');
+            $.cookie("user_language", current_language, { path: "/" });
+                    });
+        $("#textarea_2").bind("change", function() { textareaChanged = true; });
+
+    });
+
+    $(window).bind('beforeunload', function() {
+        if (submitClicked == true || testDone == true) { return; }
+            if (textareaChanged == true) {
+                return "You haven't saved your answer. If you navigate away from this page, you might LOSE your changes.";
+            }
+        var dirtyLanguages = $("#codeshell").codeShell("getDirtyLanguages");
+        if (dirtyLanguages.length > 0) {
+            var langText = "";
+            $.each(dirtyLanguages, function(i, lang) {
+                if(i == dirtyLanguages.length - 1) { // Last Element
+                    langText += lang;
+                } else if (i == dirtyLanguages.length - 2) {
+                    langText += lang + " and ";
+                } else {
+                    langText += lang + ", ";
+                }
+            });
+            var langWarning = "You have unsaved " + langText + " code.\nPlease submit your code before leaving the page";
+            return langWarning;
+        }
+    });
+
+
+    (function(){
+      /* Toggle the panel show & hide*/
+      var togglePanel = function(){
+        if ($('#progressbar-panel').hasClass('collapse'))
+        {
+          $('#progressbar-panel').addClass('expand');
+          $('#progressbar-panel').removeClass('collapse');
+          $('#progressbar-panel .progress').animate({'left':'-3px'}, 500);
+          $.cookie('progresspanel-pref-new', 'expand', { path: "/"});
+        }
+        else
+        {
+          $('#progressbar-panel .progress').animate({'left':'-150px'}, 500, function(){
+            $('#progressbar-panel').addClass('collapse');
+            $('#progressbar-panel').removeClass('expand');
+            $.cookie('progresspanel-pref-new', 'collapse', { path: "/"} );
+          });
+        }
+        return false;
+      }
+
+      /* Listeners */
+      $('.trigger').click(togglePanel);
+      $('#progress-close').click(togglePanel);
+    })();
+
+
+</script>
+<!-- 10.37.15.111 -->
